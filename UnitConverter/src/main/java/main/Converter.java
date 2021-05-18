@@ -74,6 +74,7 @@ public class Converter {
 			    		
 			    	default: System.out.println("Please enter a number.");
 		    		}	
+					break;
 				//quit
 		    	case 3:
 		    		System.out.println("Goodbye!");
