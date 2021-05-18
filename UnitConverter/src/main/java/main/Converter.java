@@ -8,6 +8,8 @@ public class Converter {
 		int menu1 = 0;
 		int menu2 = 0; 
 		int menu3 = 0;
+		//scanner has to be outside of loop to close
+		Scanner scanner = new Scanner(System.in);
 		while(menu1 !=3) {
 			
 			System.out.println("Select a unit to convert by Volume or Distance -");
@@ -15,10 +17,7 @@ public class Converter {
 			System.out.println("2. Distance");
 			System.out.println("3. Quit");
 			System.out.println("Type your selection and press enter:");
-
 			
-			@SuppressWarnings("resource")
-			Scanner scanner = new Scanner(System.in);
 			menu1 = scanner.nextInt();
 			switch (menu1) {
 			//main
@@ -85,8 +84,8 @@ public class Converter {
 
 		    		
 				}
-			 
 			}
+		scanner.close();
 		}
 }
 
